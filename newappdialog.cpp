@@ -100,7 +100,7 @@ void NewAppDialog::on_toolButton_2_clicked()
 {
     QString ico = QFileDialog::getOpenFileName(this, tr("Open File"),
                                                      app.icon,
-                       tr("Icons(*icns *.ico *.cur *.png *.xpm *.jpg *.bmp)"));
+                       tr("Icons(*icns *.ico *.cur *.png *.xpm *.jpg *.bmp *.svg)"));
    setIco(ico);
 }
 

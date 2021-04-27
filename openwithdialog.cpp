@@ -1,11 +1,13 @@
 #include "openwithdialog.h"
 #include "ui_openwithdialog.h"
+#include <QBitmap>
 #include <QDebug>
 #include <QFileDialog>
 #include <QGraphicsBlurEffect>
 #include <QKeyEvent>
 #include <QMenu>
 #include <QMessageBox>
+#include <QPainter>
 #include <QProcess>
 
 OpenWithDialog::OpenWithDialog(QPixmap pix, QWidget *parent)
@@ -19,12 +21,8 @@ OpenWithDialog::OpenWithDialog(QPixmap pix, QWidget *parent)
                    Qt::FramelessWindowHint);
     setAutoFillBackground(true);
     setAttribute(Qt::WA_TranslucentBackground);
-    setStyleSheet(" border-radius: 13px; "
-                            "background-color: rgba(255, 255, 255, 0);");
-    QGraphicsBlurEffect* p_blur = new QGraphicsBlurEffect;
-        p_blur->setBlurRadius(30);
-        p_blur->setBlurHints(QGraphicsBlurEffect::QualityHint);
-        ui->back->setGraphicsEffect(p_blur);
+//    setStyleSheet(" border-radius: 10px; "
+//                            "background-color: rgba(255, 255, 255, 1);");
         setFocus();
 
         connect(&signaler, SIGNAL(mouseButtonEvent(QWidget *, QMouseEvent *)),
@@ -95,13 +93,31 @@ OpenWithDialog::~OpenWithDialog()
     delete ui;
 }
 
+
 void OpenWithDialog::show(){
     QDialog::show();
     QRect r = geometry();
     r.setX(mapToGlobal(ui->back->pos()).x());
     r.setY(mapToGlobal(ui->back->pos()).y());
-    //if (pix.isNull())
-        ui->back->setPixmap(pix.copy(r.x()*scale, r.y()*scale, r.width()*scale, r.height()*scale));
+
+    QPixmap pxDts(r.size());
+    pxDts.fill(Qt::transparent);
+    QPainter painter1(&pxDts);
+    QImage img = pix.copy(r.x()*scale, r.y()*scale, r.width()*scale, r.height()*scale).toImage();
+    for (int i =0;i<5;i++) {
+        qt_blurImage(&painter1, img, 5, true, false);
+    }
+
+    QPixmap p(pxDts.size());
+    p.fill(Qt::transparent);
+    QPainter *painter = new QPainter(&p);
+    painter->setRenderHint(QPainter::Antialiasing, true);
+    QBrush brush = QBrush(pxDts);
+    painter->setBrush(brush);
+    painter->drawRoundedRect(rect(), 10, 10);
+    painter->end();
+
+    ui->back->setPixmap(p);
 }
 
 void OpenWithDialog::hideEvent(QHideEvent *)
@@ -176,6 +192,7 @@ void OpenWithDialog::runWith(int pos){
             }
             stay = false;
         }else{
+            //find better to run on MacOS only one instance app and open files
            QProcess::startDetached(buttons().at(index)->toolTip(), QStringList() << fileName);
         }
     }

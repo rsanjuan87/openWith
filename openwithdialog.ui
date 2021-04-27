@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>311</width>
-    <height>311</height>
+    <width>301</width>
+    <height>321</height>
    </rect>
   </property>
   <property name="focusPolicy">
@@ -21,8 +21,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>311</width>
-     <height>311</height>
+     <width>301</width>
+     <height>321</height>
     </rect>
    </property>
    <property name="scaledContents">
@@ -34,222 +34,35 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>311</width>
-     <height>311</height>
+     <width>301</width>
+     <height>321</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QWidget{
-	background-color: rgba(255, 255, 255, 0);
-}
+    <string notr="true">
 QFrame {
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(46, 46, 44, 250), stop:1 rgba(97, 102, 113, 161));
-   border-radius: 13px;
+	background-color: rgba(150, 150, 150, 100);
+   border-radius: 10px;
 }
 </string>
    </property>
    <layout class="QGridLayout" name="gridLayout_6">
-    <item row="1" column="2">
-     <widget class="QToolButton" name="btn6">
-      <property name="minimumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>(6) Adicionar</string>
-      </property>
-      <property name="icon">
-       <iconset resource="imgs/imgs.qrc">
-        <normaloff>:/add.png</normaloff>:/add.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>64</width>
-        <height>64</height>
-       </size>
-      </property>
-      <property name="toolButtonStyle">
-       <enum>Qt::ToolButtonTextUnderIcon</enum>
-      </property>
-      <property name="autoRaise">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
-     <widget class="QToolButton" name="btn9">
-      <property name="minimumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>(9) Adicionar</string>
-      </property>
-      <property name="icon">
-       <iconset resource="imgs/imgs.qrc">
-        <normaloff>:/add.png</normaloff>:/add.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>64</width>
-        <height>64</height>
-       </size>
-      </property>
-      <property name="toolButtonStyle">
-       <enum>Qt::ToolButtonTextUnderIcon</enum>
-      </property>
-      <property name="autoRaise">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QToolButton" name="btn1">
-      <property name="minimumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>(1) Adicionar</string>
-      </property>
-      <property name="icon">
-       <iconset resource="imgs/imgs.qrc">
-        <normaloff>:/add.png</normaloff>:/add.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>64</width>
-        <height>64</height>
-       </size>
-      </property>
-      <property name="toolButtonStyle">
-       <enum>Qt::ToolButtonTextUnderIcon</enum>
-      </property>
-      <property name="autoRaise">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QToolButton" name="btn7">
-      <property name="minimumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>(7) Adicionar</string>
-      </property>
-      <property name="icon">
-       <iconset resource="imgs/imgs.qrc">
-        <normaloff>:/add.png</normaloff>:/add.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>64</width>
-        <height>64</height>
-       </size>
-      </property>
-      <property name="toolButtonStyle">
-       <enum>Qt::ToolButtonTextUnderIcon</enum>
-      </property>
-      <property name="autoRaise">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QToolButton" name="btn3">
-      <property name="minimumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>(3) Adicionar</string>
-      </property>
-      <property name="icon">
-       <iconset resource="imgs/imgs.qrc">
-        <normaloff>:/add.png</normaloff>:/add.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>64</width>
-        <height>64</height>
-       </size>
-      </property>
-      <property name="toolButtonStyle">
-       <enum>Qt::ToolButtonTextUnderIcon</enum>
-      </property>
-      <property name="autoRaise">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
+    <property name="leftMargin">
+     <number>3</number>
+    </property>
+    <property name="topMargin">
+     <number>3</number>
+    </property>
+    <property name="rightMargin">
+     <number>3</number>
+    </property>
+    <property name="bottomMargin">
+     <number>3</number>
+    </property>
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item row="1" column="1">
      <widget class="QToolButton" name="btn2">
       <property name="minimumSize">
        <size>
@@ -267,6 +80,9 @@ QFrame {
        <font>
         <pointsize>12</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
       </property>
       <property name="text">
        <string>(2) Adicionar</string>
@@ -289,8 +105,8 @@ QFrame {
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QToolButton" name="btn8">
+    <item row="1" column="2">
+     <widget class="QToolButton" name="btn3">
       <property name="minimumSize">
        <size>
         <width>90</width>
@@ -308,48 +124,11 @@ QFrame {
         <pointsize>12</pointsize>
        </font>
       </property>
-      <property name="text">
-       <string>(8) Adicionar</string>
-      </property>
-      <property name="icon">
-       <iconset resource="imgs/imgs.qrc">
-        <normaloff>:/add.png</normaloff>:/add.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>64</width>
-        <height>64</height>
-       </size>
-      </property>
-      <property name="toolButtonStyle">
-       <enum>Qt::ToolButtonTextUnderIcon</enum>
-      </property>
-      <property name="autoRaise">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QToolButton" name="btn5">
-      <property name="minimumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>90</width>
-        <height>90</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
       </property>
       <property name="text">
-       <string>(5) Adicionar</string>
+       <string>(3) Adicionar</string>
       </property>
       <property name="icon">
        <iconset resource="imgs/imgs.qrc">
@@ -370,6 +149,92 @@ QFrame {
      </widget>
     </item>
     <item row="1" column="0">
+     <widget class="QToolButton" name="btn1">
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>(1) Adicionar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imgs/imgs.qrc">
+        <normaloff>:/add.png</normaloff>:/add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QToolButton" name="btn6">
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>(6) Adicionar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imgs/imgs.qrc">
+        <normaloff>:/add.png</normaloff>:/add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
      <widget class="QToolButton" name="btn4">
       <property name="minimumSize">
        <size>
@@ -387,6 +252,9 @@ QFrame {
        <font>
         <pointsize>12</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
       </property>
       <property name="text">
        <string>(4) Adicionar</string>
@@ -409,11 +277,263 @@ QFrame {
       </property>
      </widget>
     </item>
+    <item row="3" column="1">
+     <widget class="QToolButton" name="btn8">
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>(8) Adicionar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imgs/imgs.qrc">
+        <normaloff>:/add.png</normaloff>:/add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QToolButton" name="btn7">
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>(7) Adicionar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imgs/imgs.qrc">
+        <normaloff>:/add.png</normaloff>:/add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QToolButton" name="btn9">
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>(9) Adicionar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imgs/imgs.qrc">
+        <normaloff>:/add.png</normaloff>:/add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QToolButton" name="btn5">
+      <property name="minimumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>90</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      </property>
+      <property name="text">
+       <string>(5) Adicionar</string>
+      </property>
+      <property name="icon">
+       <iconset resource="imgs/imgs.qrc">
+        <normaloff>:/add.png</normaloff>:/add.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>64</width>
+        <height>64</height>
+       </size>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextUnderIcon</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="3">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QToolButton" name="toolButton">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.7, fx:0.5, fy:0.5, stop:0 rgba(157, 157, 157, 255), stop:0.479904 rgba(157, 157, 157, 255), stop:0.522685 rgba(255, 255, 255, 0), stop:1 rgba(255, 255, 255, 0));
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>X</string>
+        </property>
+        <property name="autoRaise">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Ajustes</string>
+        </property>
+        <property name="autoDefault">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
    </layout>
   </widget>
  </widget>
  <resources>
   <include location="imgs/imgs.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>OpenWithDialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>9</x>
+     <y>12</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>155</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
