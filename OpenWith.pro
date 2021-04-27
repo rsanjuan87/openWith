@@ -17,12 +17,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
+    newappdialog.cpp \
     openwithdialog.cpp
 
 HEADERS += \
+    OpenWithApp.h \
+    newappdialog.h \
     openwithdialog.h
 
 FORMS += \
+    newappdialog.ui \
     openwithdialog.ui
 
 TRANSLATIONS += \
@@ -32,3 +36,17 @@ TRANSLATIONS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    imgs/imgs.qrc
+
+macx: QMAKE_INFO_PLIST = Info.plist
+
+DISTFILES += \
+    Info.plist
+
+TARGET = ../OpenWith
+
+CONFIG(debug, debug|release) {
+     TARGET = $$join(TARGET,,,_debug)
+}

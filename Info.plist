@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
         <key>NOTE</key>
-        <string>A Psiphon very cute and for all. http://github.com/rsanjuan87/PsiphonQt</string>
+        <string></string>
         <key>CFBundleIdentifier</key>
-        <string>san.org.PsiphonQt</string>
+        <string>san.org.OpenWith</string>
 	<key>NSSupportsAutomaticGraphicsSwitching</key>
 	<true/>
 	<key>LSUIElement</key>
@@ -15,9 +15,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Created by Qt/QMake</string>
-	<key>CFBundleExecutable</key>
-        <string>PsiphonQt</string>
+        <string>Created by Qt/QMake</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>LSMinimumSystemVersion</key>
@@ -26,6 +24,23 @@
 	<string>NSApplication</string>
         <key>LSUIElement</key>
         <string>1</string>
+        <key>CFBundleDocumentTypes</key>
+                <array>
+                        <dict>
+                                <key>CFBundleTypeExtensions</key>
+                                <array>
+                                        <string>*</string>
+                                </array>
+                                <key>CFBundleTypeName</key>
+                                <string>AllFiles</string>
+                                <key>CFBundleTypeRole</key>
+                                <string>Viewer</string>
+                                <key>LSHandlerRank</key>
+                                <string>Default</string>
+                                <key>LSTypeIsPackage</key>
+                                <integer>0</integer>
+                        </dict>
+                </array>
 </dict>
 </plist>
 
